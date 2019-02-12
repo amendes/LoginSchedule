@@ -1,0 +1,47 @@
+#: import main main
+#: import ListItemButton kivy.uix.listview.ListItemButton
+
+Login_Page:
+
+<Login_Page>:
+	orientation: "vertical"
+	login_text_input: login_text
+	psswd_text_input: psswd_text
+	padding: 10
+	spacing: 10
+
+	BoxLayout:
+		size_hint_y: 1
+		height: "40dp"
+
+		Label:
+			text: "Login"
+
+	BoxLayout:
+		size_hint_y: 1
+		height: "40dp"
+
+		TextInput:
+			id: login_text
+
+	BoxLayout:
+		size_hint_y: 1
+		height: "40dp"
+
+		Label:
+			text: "Senha"
+
+	BoxLayout:
+		size_hint_y: 1
+		height: "40dp"
+
+		TextInput:
+			id: psswd_text
+
+	BoxLayout:
+		size_hint_y: 1
+		height: "40dp"
+		Button:
+			text: "Entra"
+			size_hint_x: 15
+			on_press: root.enter_button()
